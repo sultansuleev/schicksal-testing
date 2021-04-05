@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Register</title>
+    <title>Profile</title>
     <link rel="stylesheet" href="./assets/styles/style.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
@@ -25,10 +25,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="./login.html">Auth<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="./login.html">Auth</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./profile.html">Profile</a>
+                    <a class="nav-link" href="./profile.html">Profile<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Admin</a>
@@ -42,31 +42,14 @@
         <div class="container" style="color: #000;">
             <div class="row">
                 <div class="col-lg-8 mx-auto">
-                    <h2>Sign Up</h2>
-                    <div class="text-sub-con">
-                        <form>
-                            <div class="form-group">
-                                <label for="name">Name</label>
-                                <input type="text" class="form-control" id="name" placeholder="Enter name">
-                            </div>
-                            <div class="form-group">
-                                <label for="email">Email address</label>
-                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
-                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                            </div>
-                            <div class="form-group">
-                                <label for="pass">Password</label>
-                                <input type="password" class="form-control" id="pass" placeholder="Password">
-                            </div>
-                            <div class="form-group">
-                                <label for="rePass">Confirm Password</label>
-                                <input type="password" class="form-control" id="rePass" placeholder="Confirm Password">
-                            </div>
-                            <button type="submit" class="btn btn-primary" aria-describedby="alreadyReg">Register</button>
-                            <small id="alreadyReg" class="form-text text-muted">
-                                Already have an account? <a href="./login.html">Sign In</a>
-                            </small>
-                        </form>
+                    <h2>My Profile</h2>
+                    <div class="text-sub-con d-flex flex-row">
+                        <img class="img-thumbnail rounded mb-4 " src="./assets/img/avatar.jpg" alt="avatar" style="width: 195px;">
+                        <div class="float-right" style="width: max-content;">
+                            <h2>Qara Zhigit</h2>
+                            <p>IITU, Almaty, KZ</p>
+                            <i>"The wolf isn't the one who is the wolf, but the one who didn't act in Twilight."</i>
+                        </div>
                     </div>
                 </div>
             </div>
