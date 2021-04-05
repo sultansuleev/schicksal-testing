@@ -4,8 +4,8 @@
     font-family: 'Roboto', sans-serif;
 }
 
-body {
-    background: #ffffff;
+html, body {
+    min-height: 100vh;
 }
 
 .topworkz {

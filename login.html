@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+    <link rel="stylesheet" href="./assets/styles/style.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cabin:700">
+    <link rel="stylesheet" href="./assets/fonts/font-awesome.min.css">
+</head>
+<body class="bg-light">
+<header class="navbar navbar-expand-lg navbar-light fixed-top well">
+    <div class="container">
+        <a class="navbar-brand d-flex flex-row align-items-center" href="./index.html">
+            <img src="./assets/img/Entropy_logo.png" class="d-inline-block align-top pr-3" alt=""
+                 style="filter: grayscale(100%); width: 60px;">
+            Schicksal Testing
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Auth</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Profile</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Admin</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="content-section text-center" style="background-color: #fff;">
+        <div class="container" style="color: #000;">
+            <div class="row">
+                <div class="col-lg-8 mx-auto">
+                    <h2>Sign In</h2>
+                    <div class="text-sub-con">
+                        <form>
+                            <div class="form-group">
+                                <label for="email">Email address</label>
+                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                            </div>
+                            <div class="form-group">
+                                <label for="pass">Password</label>
+                                <input type="password" class="form-control" id="pass" placeholder="Password">
+                            </div>
+                            <button type="submit" class="btn btn-primary" aria-describedby="alreadyReg">Login</button>
+                            <small id="alreadyReg" class="form-text text-muted">
+                                Not registered yet? <a href="./register.html">Solve it as soon as possible</a>
+                            </small>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</main>
+
+<footer class="fixed-bottom" style="background: #ffffff">
+    <div class="f-con">
+        <img src="./assets/img/Ellipse%201%20copy%2012.png" alt="Ellipse">
+        <p>
+            © 2021. All Rights Reserved Schicksal
+        </p>
+    </div>
+</footer>
+
+
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+<script src="assets/js/grayscale.js"></script>
+
+</body>
+</html>
