@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Profile</title>
+    <title>Edit Profile</title>
     <link rel="stylesheet" href="./assets/styles/style.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,700,400italic,700italic">
@@ -25,10 +25,10 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="./login.html">Auth</a>
+                    <a class="nav-link" href="./login.html">Auth<span class="sr-only">(current)</span></a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="./profile.html">Profile<span class="sr-only">(current)</span></a>
+                    <a class="nav-link" href="./profile.html">Profile</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Admin</a>
@@ -38,24 +38,33 @@
     </div>
 </header>
 <main>
-    <div class="content-section text-center" style="background-color: #fff; padding-top: 100px; padding-bottom: 100px;">
+    <div class="content-section text-center" style="background-color: #fff; padding-top: 100px;">
         <div class="container" style="color: #000;">
             <div class="row">
-                <div class="col-lg-8 mx-auto" style="position: relative">
-                    <h2>My Profile</h2>
-                    <div class="d-flex align-items-center justify-content-center edit-cust-profile">
-                        <a href="./editProfile.html" class="d-flex flex-row align-items-center" style="font-size: 21px;">
-                            Edit
-                            <img src="./assets/img/icon-edit.svg" class="ml-2" style="width: 20px;" alt="edit">
-                        </a>
-                    </div>
-                    <div class="text-sub-con d-flex flex-row">
-                        <img class="img-thumbnail rounded mb-4 " src="./assets/img/avatar.jpg" alt="avatar" style="width: 195px;">
-                        <div class="float-right" style="width: max-content;">
-                            <h2>Qara Zhigit</h2>
-                            <p>IITU, Almaty, KZ</p>
-                            <i>"The wolf isn't the one who is the wolf, but the one who didn't act in Twilight."</i>
-                        </div>
+                <div class="col-lg-8 mx-auto">
+                    <h2>Edit Profile</h2>
+                    <div class="text-sub-con">
+                        <form>
+                            <img class="img-thumbnail rounded mb-4 " src="./assets/img/avatar.jpg" alt="avatar" style="width: 195px;">
+                            <div class="form-group">
+                                <label for="name">Name</label>
+                                <input type="text" class="form-control" id="name" placeholder="Qara Zhigit">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email address</label>
+                                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="qapqaraschka@gmail.com">
+                            </div>
+                            <div class="form-group">
+                                <label for="pass">Old Password</label>
+                                <input type="password" class="form-control" id="pass" placeholder="Old Password">
+                            </div>
+                            <div class="form-group">
+                                <label for="rePass">New Password</label>
+                                <input type="password" class="form-control" id="rePass" placeholder="New Password">
+                            </div>
+                            <button type="submit" class="btn btn-primary" aria-describedby="alreadyReg">Save Changes</button>
+                            <button type="submit" class="btn btn-danger" aria-describedby="alreadyReg">Cancel</button>
+                        </form>
                     </div>
                 </div>
             </div>
